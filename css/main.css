@@ -9,32 +9,88 @@
 }
 
 .splash-background {
-  background-image: url("../image.png");
+  background-image: url("../bg-image-mobile.png");
   background-size: cover;
+  background-position: center center;
+}
+
+.pure-g .title,
+.pure-g .subtitle,
+.pure-g .nav-link {
+  font-family: Tahoma;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: white;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: black;
+  background-color: #2d3e50;
 }
 
 .pure-g .title,
 .pure-g .subtitle {
-  font-family: fantasy;
-  font-weight: 100;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: white;
+  letter-spacing: 0.4em;
+}
+
+.pure-g .nav {
+  letter-spacing: 0.2em;
 }
 
 .pure-g .title {
-  font-size: 40px;
+  font-size: 20px
 }
 
 .pure-g .subtitle {
-  font-size 16px;
+  font-size: 10px
+}
+
+.pure-g .nav {
+  font-size: 14px
 }
 
 .header-menu,
 .nav-menu {
   text-align: center;
+  background-color: #2d3e50;
+}
+
+.nav-link {
+  padding: 0 1em;
 }
 
 .header-menu {
-  padding: 1em 20% 0 20%;
+  padding: 0.25em 20% 1em 20%;
+}
+
+@media (min-width: 48em) {
+  .pure-g .title {
+    font-size: 40px;
+  }
+
+  .pure-g .subtitle {
+    font-size: 16px;
+  }
+
+  .nav {
+    padding: 1em;
+  }
+
+  .pure-g .title,
+  .pure-g .subtitle,
+  .pure-g .nav-link {
+    line-height: 40px;
+  }
+
+  .header-menu {
+    padding: 0.25em 20% 0 20%;
+  }
+
+  .splash-background {
+    background-image: url("../bg-image.png");
+  }
 }
