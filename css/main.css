@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
 .pure-g > div {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -67,6 +71,28 @@
   padding: 0.25em 20% 1em 20%;
 }
 
+.content-section {
+  padding-top: 14em;
+  background-color: transparent;
+}
+
+.content-wrapper {
+  background-color: transparent;
+}
+
+.main-panel {
+  background-color: white;
+  margin: 0 5em 5em;
+}
+
+.content-head {
+  padding-top: 1em;
+}
+
+.footer.l-box {
+  padding: 1.75em;
+}
+
 @media (min-width: 48em) {
   .pure-g .title {
     font-size: 40px;
@@ -92,5 +118,21 @@
 
   .splash-background {
     background-image: url("../bg-image.png");
+  }
+
+  .main-panel {
+    margin: 0 5em 5em;
+  }
+
+  .content-section {
+    padding-top: 6em;
+  }
+
+  .content-section:last-child {
+    padding-bottom: 1em;
+  }
+
+  .footer.l-box {
+    padding: 1.75em;
   }
 }
