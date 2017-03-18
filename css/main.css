@@ -2,6 +2,12 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+a {
+  color: #1f8dd6;
+  text-decoration: none;
+}
+
 .pure-g > div {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -20,7 +26,8 @@ ul {
 
 .pure-g .title,
 .pure-g .subtitle,
-.pure-g .nav-link {
+.pure-g .nav-link,
+.footer {
   font-family: Tahoma;
   font-style: normal;
   font-weight: 100;
@@ -89,8 +96,13 @@ ul {
   padding-top: 1em;
 }
 
+.subhead {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
 .footer.l-box {
-  padding: 1.75em;
+  padding: 2.4em;
 }
 
 @media (min-width: 48em) {
@@ -121,7 +133,7 @@ ul {
   }
 
   .main-panel {
-    margin: 0 5em 5em;
+    margin: 0 10em 5em;
   }
 
   .content-section {
@@ -133,6 +145,10 @@ ul {
   }
 
   .footer.l-box {
-    padding: 1.75em;
+    padding: 2.3em;
+  }
+
+  .l-box {
+    padding: 1em 4em;
   }
 }
